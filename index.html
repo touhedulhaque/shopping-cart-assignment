@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt7s30GVxkAvbSa5ffDzl1s66O9gYyByD_dQ&usqp=CAU"
+        type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="container-fluid">
+    <div class="container text-center p-3">
+        <h1 style="font-family:fantasy; color: white; background-color: black;">Shoe Store</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 p-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1578116922645-3976907a7671?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Blue</h5>
+                        <p class="card-text">A special high neck shoes for both summer and winter as well as causal or
+                            regular.</p>
+                        <h3>120$</h3>
+                        <a href="#" class="btn btn-primary add_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8&w=1000&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Nike</h5>
+                        <p class="card-text">A regular or fitness shoes for both summer and winter as well as causal or
+                            regular.</p>
+                        <h3>100$</h3>
+                        <a href="#" class="btn btn-info add_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1530389912609-9a007b3c38a4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cmVlYm9rfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80">
+                    <div class="card-body">
+                        <h5 class="card-title">Reebok white</h5>
+                        <p class="card-text">A regular standard shoes for both summer and winter as well as causal or
+                            regular.</p>
+                        <h3>80$</h3>
+                        <a href="#" class="btn btn-success add_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container text-center">
+        <h1 style="font-family:serif ; font-weight: bolder; background-color: #fafad2; color: #483d8b;"> &#171;
+            Cart &#187;</h1>
+        <hr>
+        <br>
+        <table class="table table-hover cart_table">
+            <thead>
+                <tr class="table-info">
+                    <th scope="col">Cart Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+
+            </tbody>
+
+        </table>
+        <br>
+        <button class="btn btn-danger btn-lg" id="clear_cart">Clear Cart</button>
+    </div>
+    <div class="container text-center mt-5">
+        <button class="btn btn-warning btn-lg">Proceed to checkout</button>
+    </div>
+
+
+
+
+
+
+    <!-- customize JS -->
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>
